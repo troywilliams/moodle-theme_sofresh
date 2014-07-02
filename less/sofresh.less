@@ -1,0 +1,96 @@
+@import "fontawesome/font-awesome"; // using awesome fonts at cdn @fa-font-path:
+@import "animate/animate"; // css animations
+@import "moodle";
+
+
+@default-color-orange: #F98012;
+@default-color-yellow: #FAFFBD;
+@default-color-blue: #0070A8;
+
+@default-heading-color: #f98012;
+
+body {
+  margin: 0;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 300;
+  color: @default-heading-color;
+  text-rendering: optimizelegibility;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+
+
+
+.coursebox .info h3.coursename {
+  color: @default-color-blue;
+}
+
+.course_category_tree .category .numberofcourse {
+  color: inherit;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 40px;
+
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.mform legend a, .mform legend a:hover{  color: #0070A8;}
+
+.navbar-brand {
+  float: left;
+
+  padding: 5px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+}
+
+// Breadcrumbs
+.breadcrumb {
+  display: inline-block;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 11.9px;
+  background-color: transparent;
+}
+
+@import "sofresh/navbar";
+@import "sofresh/blocks";
+@import "sofresh/dock";
+@import "sofresh/forms";
+@import "sofresh/forum";
+
+//@import "animate/animate";
+.open > .dropdown-menu {
+    .animated;
+    .fadeIn;
+
+}

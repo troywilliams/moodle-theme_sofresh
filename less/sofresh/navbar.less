@@ -1,0 +1,41 @@
+#page-header {
+  margin-top: @navbar-height;
+}
+
+@sofresh-avatar-small: 32px;
+
+ul.user-menu li a{
+  padding-top: ((@navbar-height - @sofresh-avatar-small) / 2);
+  padding-bottom: ((@navbar-height - @sofresh-avatar-small) / 2);
+}
+
+ul.user-menu li .avatar-small img {
+  width: @sofresh-avatar-small - 2;
+  height: @sofresh-avatar-small - 2;
+  padding: 0px;
+  vertical-align: middle;
+  border: 2px solid #fff;
+  margin: 0 5px;
+}
+
+.um-container {
+  padding: @padding-base-vertical @padding-base-horizontal;
+  min-width: 300px;
+}
+
+
+.navbar-login-info {
+    .navbar-vertical-align(@line-height-computed);
+    color: white;
+    margin-right: 0;
+    a1 {
+        display: block;
+        margin: 0;
+    }
+    a.login-link {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+     
+}
